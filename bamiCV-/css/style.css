@@ -1,0 +1,363 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 150vh;
+}
+
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #55ACEE;
+  height:150px;
+  
+}
+
+#navbarLink{
+  display: flex;
+  list-style: none;
+  margin: 20px 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+#profilePicture{
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px
+}
+
+#navbar img{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 30%;
+
+}
+
+.section{
+  padding: 20px 20px;
+  background-color: lightcyan;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section h1, p {
+  margin: 20px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skills{
+  padding: 20px 20px;
+  background-color: rgb(223, 146, 31);
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#education{
+  padding: 20px 20px;
+  background-color: rgb(174, 120, 245);
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  
+}
+
+#contact{
+  padding: 20px 20px;
+  background-color: rgb(66, 148, 173);
+  height: 20%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  float: right;
+}
+
+#contactPage{
+  padding: 20px 20px;
+  background-color: rgb(66, 148, 173);
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+#experiences {
+  padding: 20px 20px;
+  background-color: rgb(66, 148, 173);
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  float: left;
+}
+
+#progress{
+  background: #333;
+  border-radius: 13px;
+  height: 20px;
+  width: 250px;
+  padding: 3px;
+
+}
+
+#progress:after {
+  content: '';
+  display: block;
+  background: orange;
+  width: 50%;
+  height: 100%;
+  border-radius: 9px;
+}
+
+
+#hobbies {
+  padding: 20px 20px;
+  background-color: rgb(66, 148, 173);
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  float: right;
+}
+
+
+#bigContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+#secondSection{
+
+  height: 30%;
+
+}
+
+#footer{
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 10%;
+  width: 100%;
+ 
+}
+
+#footerContact{
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding-top: 30px;
+  height: 20%;
+  width: 100%;
+ 
+}
+
+.backHome{
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.followMe{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.followMe li{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 20px 20px;
+
+}
+
+#backToTop{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+
+#backToFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+
+@media screen and (min-width: 595px) {
+  .section{
+    height: 30%;
+  }
+  
+  .skills{
+    height: 45%;
+    padding: 20px 20px;
+  }
+
+  #footer{
+    height: 20%;
+  }
+
+}
+
+@media screen and (min-width: 719px) {
+  .section{
+    height: 30%;
+  }
+  
+  .skills{
+    height: 40%;
+    padding: 20px 20px;
+  }
+
+  #footer{
+    height: 20%;
+  
+  }
+
+  #secondSection{
+    height: 20%;
+  }
+ 
+}
+
+
+@media screen and (max-width: 568px) {
+  main{
+    max-width: 100%;
+  }
+  .section{
+    height: 40%;
+    width: 100%;
+  }
+  
+  .skills{
+    height: 45%;
+    padding: 20px 20px;
+  }
+
+  #navbar{
+    width: 100%;
+  }
+
+  #bigContainer{
+    
+    width: 100%;
+  }
+
+
+#secondSection{
+  height: 40%;
+}
+
+  #footer{
+    height: 20%;
+  }
+}
+
+@media  screen and (max-width: 280px) {
+
+  #navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0;
+    justify-content: space-around;
+  }
+
+  #navbarLink{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0;
+
+
+  }
+
+  #progress{
+    width: 120%;
+  }
+
+  #profilePicture{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    margin: 0 0;
+    padding: 0 0;
+  }
+  
+}
+
+@media  screen and (max-width: 328px) {
+
+  #navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0;
+    justify-content: space-around;
+  }
+
+  #navbarLink{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0;
+
+
+  }
+
+  #progress{
+    width: 120%;
+  }
+
+  #profilePicture{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    margin: 0 0;
+    padding: 0 0;
+  }
+  
+}
+
